@@ -1,0 +1,10 @@
+{
+	"name" : "tasa-web",
+	"main" : "server.js",
+	"version" : "0.0.1",
+	"author" : "Soubhik Barari <soubhik.barari@tufts.edu",
+	"dependencies" : {
+		"express" : "~3.5.0",
+		"mongoose" : "~3.6.13"
+	}
+}
