@@ -4,7 +4,12 @@
 	"version" : "0.0.1",
 	"author" : "Soubhik Barari <soubhik.barari@tufts.edu",
 	"dependencies" : {
-		"express" : "~3.5.0",
-		"mongoose" : "~3.6.13"
+		"express" : "latest",
+		"mongodb": "latest",
+		"mongoose" : "latest",
+		"grunt": "~0.4.5",
+		"grunt-contrib-jshint": "~0.10.0",
+		"grunt-contrib-nodeunit": "~0.3.3",
+		"grunt-contrib-uglify": "~0.4.0"
 	}
 }
