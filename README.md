@@ -2,7 +2,7 @@ TASA web
 =======
 
 ~ app
-***** controllers   -> angular DOM injections
+~~~~~ controllers   -> angular DOM injections
 ***** models        -> mongoose models
 ***** views         -> html views
 ***** routes        -> express route handling
