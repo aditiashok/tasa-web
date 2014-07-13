@@ -12,8 +12,8 @@ TASA web
 &nbsp;&nbsp;&nbsp;&nbsp;index.html    -> *main view*  
 &nbsp;&nbsp;&nbsp;&nbsp;css           -> *stylesheets*  
 &nbsp;&nbsp;&nbsp;&nbsp;js            -> *client-side javascripts*  
-&nbsp;**package.json**      -> *npm configuration for dependencies*  
-&nbsp;**server.js**         -> *node configuration*  
+&nbsp;**package.json**                -> *npm configuration for dependencies*  
+&nbsp;**server.js**                   -> *node configuration*  
 
 
 Todo:
