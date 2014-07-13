@@ -1,14 +1,13 @@
 TASA web
 =======
 
-app
-
+* app
  controllers   -> angular DOM injections
  models        -> mongoose models
  views         -> html views
  routes        -> express route handling
  
-config
+* config
  db            -> mongodb configuration
  
 public
