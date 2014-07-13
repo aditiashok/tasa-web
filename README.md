@@ -3,25 +3,25 @@ TASA web
 Structure  
 ---------
 -- **app**  
------- controllers   -> *angular DOM injections*  
------- models        -> *mongoose models*  
------- views         -> *html views*  
------- routes        -> *express route handling*  
+------ controllers  -> *angular DOM injections*  
+------ models       -> *mongoose models*  
+------ views        -> *html views*  
+------ routes       -> *express route handling*  
 -- **config**  
------- db            -> *mongodb configuration*  
+------ db           -> *mongodb configuration*  
 -- **public**  
------- index.html    -> *main view*  
------- css           -> *stylesheets*  
------- js            -> *client-side javascripts*  
--- **package.json**                -> *npm configuration for dependencies*  
--- **server.js**                   -> *node configuration*  
+------ index.html   -> *main view*  
+------ css          -> *stylesheets*  
+------ js           -> *client-side javascripts*  
+-- **package.json** -> *npm configuration for dependencies*  
+-- **server.js**    -> *node configuration*  
 
 
 Todo
 -----
 
-
-
+* Configure API / application routes
+* Configure database
 * Photo gallery APIs
   - http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/demo/basic.htm
   - http://galleria.io/
