@@ -2,7 +2,7 @@ TASA web
 =======
 Structure  
 ---------
-&nbsp;**app**  
+&nbsp;-**app**  
 &nbsp;&nbsp;&nbsp;&nbsp;----controllers   -> *angular DOM injections*  
 &nbsp;&nbsp;&nbsp;&nbsp;models        -> *mongoose models*  
 &nbsp;&nbsp;&nbsp;&nbsp;views         -> *html views*  
