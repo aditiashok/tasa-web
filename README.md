@@ -1,7 +1,7 @@
 TASA web
 =======
 
-__ **app**
+__ **app**__
 * controllers   -> *angular DOM injections*
 * models        -> *mongoose models*
 * views         -> *html views*
