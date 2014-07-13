@@ -27,6 +27,5 @@ Todo
   - http://galleria.io/
   - http://tympanus.net/codrops/2012/06/05/fullscreen-slit-slider-with-jquery-and-css3/ --> sexy full screen slideshow
   - http://unslider.com/ --> easy, small jquery slider
-
 * Eboard bio / photo client-side API - FancyBox?
 * Feedback form connect to email + form validation
