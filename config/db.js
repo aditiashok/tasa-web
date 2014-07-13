@@ -1,10 +1,12 @@
 // imports
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-    ObjectId = Schema.ObjectId
+var Schema = mongoose.Schema,
+    ObjectId = Schema.ObjectId;
+var url = 'mongodb://localhost:27017';
 
 // schemas
 var photoSchema = new Schema({
+  desc: String
   /* how to store...? */
 });
 
@@ -17,7 +19,7 @@ var memberSchema = new Schema({
   desc: String,
   email: String,
   year: Number,
-  photo: photoSchema
+  photos: [photoSchema]
 });
 
 /*
@@ -28,7 +30,5 @@ var memberSchema = new Schema({
 
 // exports
 module.exports.mongoose = mongoose;
-module.exports.EBMember = EBMember;
-
-// db
-mongoose.connect('mongodb://localhost:27017');
+module.exports.memberSchema = memberSchema;
+module.exports.url = url;
