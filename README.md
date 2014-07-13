@@ -18,8 +18,8 @@ TASA web
 * css           -> stylesheets
 * js            -> client-side javascripts
  
-package.json      -> npm configuration for dependencies
-server.js         -> node configuration
+**package.json**      -> npm configuration for dependencies
+**server.js**         -> node configuration
 
 
 Todo:
