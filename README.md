@@ -5,22 +5,22 @@ TASA web
 
 * controllers   -> *angular DOM injections*
 * models        -> *mongoose models*
-* views         -> html views
-* routes        -> express route handling
+* views         -> *html views*
+* routes        -> *express route handling*
  
 **config**
 
-* db            -> mongodb configuration
+* db            -> *mongodb configuration*
  
 **public**
 
-* index.html    -> main view
-* css           -> stylesheets
-* js            -> client-side javascripts
+* index.html    -> *main view*
+* css           -> *stylesheets*
+* js            -> *client-side javascripts*
  
-**package.json**      -> npm configuration for dependencies
+**package.json**      -> *npm configuration for dependencies*
 
-**server.js**         -> node configuration
+**server.js**         -> *node configuration*
 
 
 Todo:
