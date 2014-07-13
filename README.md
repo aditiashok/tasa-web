@@ -3,23 +3,17 @@ TASA web
 
 &nbsp;**app**  
 &nbsp;&nbsp;&nbsp;&nbsp;controllers   -> *angular DOM injections*
-* models        -> *mongoose models*
-* views         -> *html views*
-* routes        -> *express route handling*
- 
-**config**
-
-* db            -> *mongodb configuration*
- 
-**public**
-
-* index.html    -> *main view*
-* css           -> *stylesheets*
-* js            -> *client-side javascripts*
- 
-**package.json**      -> *npm configuration for dependencies*
-
-**server.js**         -> *node configuration*
+&nbsp;&nbsp;&nbsp;&nbsp;models        -> *mongoose models*
+&nbsp;&nbsp;&nbsp;&nbsp;views         -> *html views*
+&nbsp;&nbsp;&nbsp;&nbsp;routes        -> *express route handling*
+&nbsp;**config**
+&nbsp;&nbsp;&nbsp;&nbsp;db            -> *mongodb configuration*
+&nbsp;**public**
+&nbsp;&nbsp;&nbsp;&nbsp;index.html    -> *main view*
+&nbsp;&nbsp;&nbsp;&nbsp;css           -> *stylesheets*
+&nbsp;&nbsp;&nbsp;&nbsp;js            -> *client-side javascripts*
+&nbsp;**package.json**      -> *npm configuration for dependencies*
+&nbsp;**server.js**         -> *node configuration*
 
 
 Todo:
