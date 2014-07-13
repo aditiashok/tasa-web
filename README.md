@@ -8,8 +8,8 @@ Structure
 ------ views        -> *html views*  
 ------ routes       -> *express route handling*  
 -- **config**  
------- db           -> *mongodb configuration*
--- **node_modules** -> *node dependencies*
+------ db           -> *mongodb configuration*  
+-- **node_modules** -> *node dependencies*  
 -- **public**  
 ------ index.html   -> *main view*  
 ------ css          -> *stylesheets*  
