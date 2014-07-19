@@ -21,7 +21,8 @@ Todo
 -----
 
 * Configure API / application routes
-* Configure database
+* Configure + load database
+* Create a good interface for database models
 * Photo gallery APIs
   - http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/demo/basic.htm
   - http://galleria.io/

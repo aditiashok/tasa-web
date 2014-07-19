@@ -1,8 +1,11 @@
 // imports
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema,
+var Schema   = mongoose.Schema,
     ObjectId = Schema.ObjectId;
-var url = 'mongodb://localhost:27017';
+var HOST = 'localhost',
+    PORT = '27017',
+    NAME = 'tasa14-15',
+    URI = 'mongodb://' + HOST + ':' + PORT + '/' + NAME; 
 
 // schemas
 var photoSchema = new Schema({
@@ -22,6 +25,13 @@ var memberSchema = new Schema({
   photos: [photoSchema]
 });
 
+var eventSchema = new Schema({
+  name: String,
+  startime: String,
+  endtime: String,
+  desc: String,
+  location: String 
+});
 /*
  * eventSchema
  * groupSchema
@@ -31,4 +41,4 @@ var memberSchema = new Schema({
 // exports
 module.exports.mongoose = mongoose;
 module.exports.memberSchema = memberSchema;
-module.exports.url = url;
+module.exports.URI = URI;
