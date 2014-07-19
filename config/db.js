@@ -10,7 +10,7 @@ var HOST = 'localhost',
 // schemas
 var photoSchema = new Schema({
   desc: String
-  /* how to store...? */
+  /* persist photo data(?) */
 });
 
 var memberSchema = new Schema({
@@ -32,13 +32,19 @@ var eventSchema = new Schema({
   desc: String,
   location: String 
 });
-/*
- * eventSchema
- * groupSchema
- *
- */
+
+var groupSchema = new Schema({
+  name: String,
+  desc: String,
+  email: String,
+  page: String,
+  photos: [photoSchema]
+});
+
 
 // exports
 module.exports.mongoose = mongoose;
 module.exports.memberSchema = memberSchema;
+module.exports.eventSchema = eventSchema;
+module.exports.groupSchema = groupSchema;
 module.exports.URI = URI;

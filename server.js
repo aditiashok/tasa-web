@@ -6,12 +6,26 @@ var root = __dirname,
 		db = require('./config/db');
 
 var app = express();
+app.use("/", express.static(path.join(__dirname, 'public')));
+
+var routes = require('./app/routes')(app);
 var port = process.env.PORT || 3000;
 
 // start
 app.listen(port);
-mongoose.connect(db.url);
 console.log('* TASA-web serving on port ' + port + ' *');
+
+// db
+mongoose.connect(db.URI);
+
+mongoose.connection.on('connected', function() {
+	console.log('* Mongoose connected to ' + db.URI);
+});
+
+mongoose.connection.on('disconnected', function() {
+	console.log('* Mongoose disconnected to ' + db.URI);
+})
+
 
 // expose
 exports = module.exports = app;

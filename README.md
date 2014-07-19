@@ -9,6 +9,8 @@ Structure
 ------ routes       -> *express route handling*  
 -- **config**  
 ------ db           -> *mongodb configuration*  
+------ boots		-> *db imports / writes*
+------ dumps		-> *db exports / backups*
 -- **node_modules** -> *node dependencies*  
 -- **public**  
 ------ index.html   -> *main view*  
@@ -21,8 +23,8 @@ Todo
 -----
 
 * Configure API / application routes
-* Configure + load database
-* Create a good interface for database models
+	- API routes for events
+	- Angular routes for all controllers
 * Photo gallery APIs
   - http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/demo/basic.htm
   - http://galleria.io/
