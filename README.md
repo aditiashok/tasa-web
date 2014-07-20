@@ -7,16 +7,16 @@ Structure
 ------ routes 			-> *express backend / api route handling*  
 -- **config**  
 ------ db 				-> *mongodb configuration*  
------- boots 			-> *db writes (mongoimport / mongoexport)*
------- dumps 			-> *db backups (mongorestore / mongodump)*
+------ boots 			-> *db writes (mongoimport / mongoexport)*  
+------ dumps 			-> *db backups (mongorestore / mongodump)*  
 -- **node_modules** 	-> *node dependencies*  
 -- **public**  
 ------ index.html 		-> *main view*  
 ------ views			-> *page views*  
------- css 				-> *stylesheets*
+------ css 				-> *stylesheets*  
 ------ img 				-> *images* 
------- js 				-> *client-side javascripts*
---------- app 			-> *angular frontend / app route handling*
+------ js 				-> *client-side javascripts*  
+--------- app 			-> *angular frontend / app route handling*  
 --------- controllers 	-> *angular controllers*   
 --------- grayscale  	-> *bootstrap visual template*  
 -- **package.json**		-> *npm configuration for dependencies*  
