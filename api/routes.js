@@ -36,8 +36,8 @@ module.exports = function(app) {
   })
 
   /* ====site==== */
-  app.get('/', function(req, res) {
-    res.render('./public/index.html')
+  app.get('*', function(req, res) {
+    res.sendfile('./public/index.html');
   });
 
 }

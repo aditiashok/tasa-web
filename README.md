@@ -2,29 +2,34 @@ TASA web
 =======
 Structure  
 ---------
--- **app**  
------- controllers  -> *angular DOM injections*  
------- models       -> *mongoose models*  
------- views        -> *html views*  
------- routes       -> *express route handling*  
+-- **api**  
+------ models 			-> *mongoose models*  
+------ routes 			-> *express backend / api route handling*  
 -- **config**  
------- db           -> *mongodb configuration*  
------- boots		-> *db imports / writes*
------- dumps		-> *db exports / backups*
--- **node_modules** -> *node dependencies*  
+------ db 				-> *mongodb configuration*  
+------ boots 			-> *db writes (mongoimport / mongoexport)*
+------ dumps 			-> *db backups (mongorestore / mongodump)*
+-- **node_modules** 	-> *node dependencies*  
 -- **public**  
------- index.html   -> *main view*  
------- css          -> *stylesheets*  
------- js           -> *client-side javascripts*  
--- **package.json** -> *npm configuration for dependencies*  
--- **server.js**    -> *node configuration*  
+------ index.html 		-> *main view*  
+------ views			-> *page views*  
+------ css 				-> *stylesheets*
+------ img 				-> *images* 
+------ js 				-> *client-side javascripts*
+--------- app 			-> *angular frontend / app route handling*
+--------- controllers 	-> *angular controllers*   
+--------- grayscale  	-> *bootstrap visual template*  
+-- **package.json**		-> *npm configuration for dependencies*  
+-- **server.js**		-> *nodejs configuration*  
 
 Todo
 -----
 
-* Configure API / application routes
-	- API routes for events
-	- Angular routes for all controllers
+* Configure routes for angular controllers to views
+* Work on angular controllers
+* Work on rest of APIs (events)
+* Work on frontend
+* Figure out way to persist photos
 * Photo gallery APIs
   - http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/demo/basic.htm
   - http://galleria.io/

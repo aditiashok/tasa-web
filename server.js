@@ -8,7 +8,7 @@ var root = __dirname,
 var app = express();
 app.use("/", express.static(path.join(__dirname, 'public')));
 
-var routes = require('./app/routes')(app);
+var routes = require('./api/routes')(app);
 var port = process.env.PORT || 3000;
 
 // start
