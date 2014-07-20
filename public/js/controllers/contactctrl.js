@@ -1,4 +1,5 @@
 
-angular.module('contactCtrl', []).controller('contactController', function($scope) {
-
-});
+angular.module('contactCtrl', []).controller('contactController', ['$scope', function($scope) {
+	$scope.title = "Contact TASA";
+	$scope.email = "something@somewhere.com";
+}]);

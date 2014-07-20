@@ -25,11 +25,10 @@ Structure
 Todo
 -----
 
-* Configure routes for angular controllers to views
-* Work on angular controllers
-* Work on rest of APIs (events)
-* Work on frontend
-* Figure out way to persist photos
+* Work on angular controllers - pulling data using api, pushing out data into views
+* Work on rest of APIs (events, gallery(?))
+* Work on frontend (prettify each view)
+* Figure out way to persist photos (either database, cache or facebook API)
 * Photo gallery APIs
   - http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/demo/basic.htm
   - http://galleria.io/

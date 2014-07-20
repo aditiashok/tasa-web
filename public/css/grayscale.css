@@ -448,9 +448,9 @@ textarea {
 }
 
 .required-field-block .required-icon .text {
-	color: #B80000;
-	font-size: 26px;
-	margin: -3px 0 0 12px;
+    color: #B80000;
+    font-size: 26px;
+    margin: -3px 0 0 12px;
 }
 /* Required field END */
 

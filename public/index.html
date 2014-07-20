@@ -44,32 +44,39 @@
                         <a href=""></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="events">Events</a>
+                        <a href="#events">Events</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="gallery">Gallery</a>
+                        <a href="#gallery">Gallery</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="e-board">E-board</a>
+                        <a href="#eboard">E-board</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="about">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="contact">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="feedback">Feedback</a>
+                        <a href="#feedback">Feedback</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div ng-view></div>
 
-    <!-- CONTENT -->
-    <!-- this is where ANGULAR will inject our content using 'views' and 'controllers' -->
+    <section class="">
+        <div class="">
+                <div ng-view>
+                    <!-- angular will use VIEWS and CONTROLLERS to inject content here -->
+                </div>
+        </div>
+    </section>
+
+    
+
 
 
     <div id="page-bottom">
@@ -91,11 +98,9 @@
     <script src="js/grayscale.js"></script>
 
 
-
     <!-- ANGULAR -->
-    <script src="js/angular.js"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers/introctrl.js"></script>
     <script src="js/controllers/aboutctrl.js"></script>

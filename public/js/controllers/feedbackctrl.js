@@ -1,4 +1,4 @@
 
-angular.module('feedbackCtrl', []).controller('feedbackController', function($scope) {
+angular.module('feedbackCtrl', []).controller('feedbackController', ['$scope', function($scope) {
 
-});
+}]);

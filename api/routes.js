@@ -4,7 +4,7 @@ var groups = require('./models/groups');
 
 module.exports = function(app) {
 
-  /* ====api==== */
+  /* ====api/backend==== */
   // eboard
   app.get('/api/eboard', function(req, res) {
     eboard.getByQuery(req.query, function(err, members) {
@@ -35,7 +35,7 @@ module.exports = function(app) {
     });
   })
 
-  /* ====site==== */
+  /* ====site/frontend==== */
   app.get('*', function(req, res) {
     res.sendfile('./public/index.html');
   });
