@@ -14,7 +14,7 @@ Structure
 ------ index.html 		-> *main view*  
 ------ views			-> *page views*  
 ------ css 				-> *stylesheets*  
------- img 				-> *images* 
+------ img 				-> *images*  
 ------ js 				-> *client-side javascripts*  
 --------- app 			-> *angular frontend / app route handling*  
 --------- controllers 	-> *angular controllers*   
