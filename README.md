@@ -27,7 +27,7 @@ Todo
 
 * Work on angular controllers - pulling data using api, pushing out data into views
 * Work on rest of APIs (events, gallery(?))
-* Photo gallery APIs with FB API and local storage of photos
+* Photo gallery APIs with FB API for photos and either db or local storage of eboard photos
   - http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/demo/basic.htm
   - http://galleria.io/
   - http://tympanus.net/codrops/2012/06/05/fullscreen-slit-slider-with-jquery-and-css3/ --> sexy full screen slideshow
