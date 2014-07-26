@@ -2,7 +2,7 @@
 // handle routes + link to controllers -- front-end
 var tasaApp = angular.module('tasaApp', ['ngRoute', 'introCtrl', 'galleryCtrl', 'eventsCtrl', 'eboardCtrl', 'aboutCtrl', 'contactCtrl', 'feedbackCtrl']);
 
-tasaApp.config(['$routeProvider', function($routeProvider) {
+tasaApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider
 		// route to HOME page
 		.when('/', {
@@ -45,5 +45,7 @@ tasaApp.config(['$routeProvider', function($routeProvider) {
 			templateUrl : 'views/feedback.html',
 			controller 	: 'feedbackController'
 		})
+
+	$locationProvider.html5Mode(true);
 
 }]);

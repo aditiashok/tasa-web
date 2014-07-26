@@ -35,6 +35,7 @@ module.exports = function(app) {
     });
   })
 
+
   /* ====site/frontend==== */
   app.get('*', function(req, res) {
     res.sendfile('./public/index.html');
