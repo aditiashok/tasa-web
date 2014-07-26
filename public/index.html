@@ -68,13 +68,21 @@
 
 
 
-            <div ng-view>
-                <!-- angular will use VIEWS and CONTROLLERS to inject content here -->
+            
+    <!-- CONTENT -->
+    <!-- AngularJS will inject content here thru VIEWS & CONTROLLERS -->
+    <section class="main-view">
+        <div class="main-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div ng-view></div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-
-
-    
 
 
 

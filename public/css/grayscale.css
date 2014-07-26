@@ -124,14 +124,13 @@ a:focus {
     }
 }
 
-.intro {
+.main-view {
     display: table;
     width: 100%;
     height: auto;
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/cshow1.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -139,7 +138,7 @@ a:focus {
     -o-background-size: cover;
 }
 
-.intro-body {
+.main-body {
     display: table-cell;
     vertical-align: middle;
 }
@@ -148,12 +147,12 @@ a:focus {
     font-size: 40px;
 }
 
-.intro-text {
+.main-text {
     font-size: 18px;
 }
 
 @media(min-width:767px) {
-    .intro {
+    .main-view {
         height: 100%;
         padding: 0;
     }
@@ -162,7 +161,7 @@ a:focus {
         font-size: 100px;
     }
 
-    .intro-text {
+    .main-text {
         font-size: 25px;
     }
 }
@@ -241,46 +240,8 @@ a:focus {
     }
 }
 
-.content-section {
+.content {
     padding-top: 30px;
-}
-
-.about-section {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/3.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.contact-section {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/cshow5.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-
-}
-
-.feedback-section {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/cshow3.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-
 }
 
 #map {
