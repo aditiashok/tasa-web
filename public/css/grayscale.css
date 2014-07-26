@@ -242,7 +242,7 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 30px;
 }
 
 .about-section {
@@ -257,7 +257,7 @@ a:focus {
     -o-background-size: cover;
 }
 
-.contact {
+.contact-section {
     width: 100%;
     padding: 50px 0;
     color: #fff;
@@ -270,7 +270,7 @@ a:focus {
 
 }
 
-.feedback {
+.feedback-section {
     width: 100%;
     padding: 50px 0;
     color: #fff;
