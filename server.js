@@ -1,12 +1,15 @@
 // modules
 var root = __dirname,
-		express = require('express'),
-		mongoose = require('mongoose'),
-		path = require('path'),
-		db = require('./config/db');
+	express = require('express'),
+	mongoose = require('mongoose'),
+	bodyParser = require('body-parser'),
+	path = require('path'),
+	db = require('./config/db');
 
 var app = express();
 app.use("/", express.static(path.join(__dirname, 'public')));
+app.use(bodyParser());
+
 
 var routes = require('./api/routes')(app);
 var port = process.env.PORT || 3000;

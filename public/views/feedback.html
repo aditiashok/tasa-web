@@ -1,6 +1,47 @@
-<div class="row">
+<style>
+
+    .feedback {
+        background: url(../img/cshow3.jpg) no-repeat center center scroll;
+        width: 100%;
+        padding:20px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+</style>
+
+<div class="feedback" ng-controller="feedbackController">
     <div class="col-lg-8 col-lg-offset-2">
         <h2>{{ title }}</h2>
-        <p>{{ subtitle }}</p>
+        <p>{{ formPrompt }}</p>
     </div>
+
+	<div class="container">
+		<form name="fdbkForm" role="form" style="width:400px; margin: 0 auto;">
+			<!-- NAME -->
+		    <div class="form-group">
+		    	<label style="font-family:Garamond;">NAME</label>
+                <p ng-show="fdbkForm.name.$error.required" class="help-inline">Your name is required.</p>
+		        <input type="text" placeholder="" class="form-control" ng-model="name" required>
+		    </div>
+
+		    <!-- EMAIL -->
+		    <div class="form-group">
+		    	<label style="font-family:Garamond;">EMAIL</label>
+		        <input type="email" placeholder="" class="form-control" ng-model="email" required>
+		        <p ng-show="fdbkForm.email.$invalid && !fdbkForm.email.$pristine" class="help-block">Enter a valid email.</p>
+		    </div>
+
+		    <!-- PROMPT FIELD -->
+		    <div class="form-group">
+		    	<label style="font-family:Garamond;">FEEDBACK</label>
+		        <textarea rows="3"placeholder="" class="form-control" ng-model="fdbk" ></textarea>
+		    </div>
+
+		    <button type="submit" class="btn btn-primary" ng-disabled="fdbkForm.$invalid" ng-click="submit(fdbkForm)">Send</button>
+		</form>
+	</div>
+
 </div>

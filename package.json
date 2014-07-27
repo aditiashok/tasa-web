@@ -7,6 +7,8 @@
 		"angular" : "latest",
 		"angular-route" : "latest",
 		"express" : "latest",
+		"body-parser" : "*",
+		"nodemailer" : "0.7",
 		"mongodb": "latest",
 		"mongoose" : "latest",
 		"grunt": "~0.4.5",

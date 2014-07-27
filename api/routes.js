@@ -1,5 +1,8 @@
 var eboard = require('./models/eboard');
 var groups = require('./models/groups');
+var mailer = require('nodemailer');
+var mail = "soubhikbarari@gmail.com";
+var pass = "Mothersip2";
 
 
 module.exports = function(app) {
@@ -35,9 +38,39 @@ module.exports = function(app) {
     });
   })
 
+  //feedback
+  app.post('/api/feedback', function(req, res) {
+    console.log('* Recieved feedback post : ', req.body, '*');
+    var name = req.body.name;
+    var email = req.body.email;
+    var fdbk = req.body.feedback;
+    var fdbkCarrier = mailer.createTransport("SMTP", {
+      service: 'Gmail',
+      auth: {
+        user: mail,
+        pass: pass /* need to make this secure! */
+      }
+    });
+    /* need to format this email package */
+    fdbkCarrier.sendMail({
+        from: fdbkaddr,
+        to: fdbkaddr,
+        subject: '** Feedback recieved from : ' + name,
+        text: fdbk
+    }, function(err, info) {
+      if(err) {
+        console.log("* Error in relaying email : *", err);
+        res.json(err);
+      } else {
+        console.log("* Forwarding feedback : *", mail);
+        res.json("Message sent: " + info.response);
+      }
+    });
+  })
+
 
   /* ====site/frontend==== */
-  app.get('*', function(req, res) {
+  app.get('/', function(req, res) {
     res.sendfile('./public/index.html');
   });
 
