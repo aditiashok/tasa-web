@@ -24,11 +24,13 @@ Structure
 
 Todo
 -----
+* Feedback - need to connect REST API to form UI
 * Eboard
 * Gallery
 * About (umbrella groups)
-* Feedback
 * Events
+* Reroutes / error handling
+
 * Photo gallery / display APIs
   - http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/demo/basic.htm
   - http://galleria.io/

@@ -15,7 +15,7 @@
 <div class="feedback" ng-controller="feedbackController">
     <div class="col-lg-8 col-lg-offset-2">
         <h2>{{ title }}</h2>
-        <p>{{ formPrompt }}</p>
+        <p>{{ formData.prompt }}</p>
     </div>
 
 	<div class="container">
@@ -24,23 +24,23 @@
 		    <div class="form-group">
 		    	<label style="font-family:Garamond;">NAME</label>
                 <p ng-show="fdbkForm.name.$error.required" class="help-inline">Your name is required.</p>
-		        <input type="text" placeholder="" class="form-control" ng-model="name" required>
+		        <input type="text" placeholder="" class="form-control" ng-model="formData.name" required>
 		    </div>
 
 		    <!-- EMAIL -->
 		    <div class="form-group">
 		    	<label style="font-family:Garamond;">EMAIL</label>
-		        <input type="email" placeholder="" class="form-control" ng-model="email" required>
+		        <input type="email" placeholder="" class="form-control" ng-model="formData.email" required>
 		        <p ng-show="fdbkForm.email.$invalid && !fdbkForm.email.$pristine" class="help-block">Enter a valid email.</p>
 		    </div>
 
 		    <!-- PROMPT FIELD -->
 		    <div class="form-group">
 		    	<label style="font-family:Garamond;">FEEDBACK</label>
-		        <textarea rows="3"placeholder="" class="form-control" ng-model="fdbk" ></textarea>
+		        <textarea rows="3"placeholder="" class="form-control" ng-model="formData.fdbk" ></textarea>
 		    </div>
 
-		    <button type="submit" class="btn btn-primary" ng-disabled="fdbkForm.$invalid" ng-click="submit(fdbkForm)">Send</button>
+		    <button type="submit" class="btn btn-primary" ng-disabled="fdbkForm.$invalid" ng-click="submit()">Send</button>
 		</form>
 	</div>
 
