@@ -1,7 +1,7 @@
 var eboard = require('./models/eboard');
 var groups = require('./models/groups');
 var mailer = require('nodemailer');
-var mail = "soubhikbarari@gmail.com";
+var addr = "soubhikbarari@gmail.com";
 var pass = "Mothersip2";
 
 
@@ -47,23 +47,23 @@ module.exports = function(app) {
     var fdbkCarrier = mailer.createTransport("SMTP", {
       service: 'Gmail',
       auth: {
-        user: mail,
+        user: addr,
         pass: pass /* need to make this secure! */
       }
     });
     /* need to format this email package */
     fdbkCarrier.sendMail({
-        from: fdbkaddr,
-        to: fdbkaddr,
+        from: addr,
+        to: addr,
         subject: '** Feedback recieved from : ' + name,
         text: fdbk
     }, function(err, info) {
       if(err) {
-        console.log("* Error in relaying email : *", err);
+        console.log("* Error in relaying email : ", err);
         res.json(err);
       } else {
-        console.log("* Forwarding feedback : *", mail);
-        res.json("Message sent: " + info.response);
+        console.log("* Forwarding feedback : ", addr);
+        res.json("Message sent to: " + addr);
       }
     });
   })

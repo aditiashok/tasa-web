@@ -16,7 +16,7 @@ var port = process.env.PORT || 3000;
 
 // start
 app.listen(port);
-console.log('* TASA-web serving on port ' + port + ' *');
+console.log('* TASA-web serving on port ' + port);
 
 // db
 mongoose.connect(db.URI);
