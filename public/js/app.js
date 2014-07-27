@@ -46,6 +46,10 @@ tasaApp.config(['$routeProvider', '$locationProvider', function($routeProvider, 
 			controller 	: 'feedbackController'
 		})
 
+		.otherwise({
+			redirectTo: '/'
+		})
+
 	$locationProvider.html5Mode(true);
 
 }]);

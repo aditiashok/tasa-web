@@ -11,7 +11,7 @@ app.use("/", express.static(path.join(__dirname, 'public')));
 app.use(bodyParser());
 
 
-var routes = require('./api/routes')(app);
+var routes = require('./app/routes')(app);
 var port = process.env.PORT || 3000;
 
 // start

@@ -2,11 +2,12 @@ TASA web
 =======
 Structure  
 ---------
--- **api**  
+-- **app**  
 ------ models 			-> *mongoose models*  
 ------ routes 			-> *express backend / api route handling*  
 -- **config**  
------- db 				-> *mongodb configuration*  
+------ db 				-> *mongodb configuration*   
+------ tasa 			-> *TASA general information*  
 ------ boots 			-> *db writes (mongoimport / mongoexport)*  
 ------ dumps 			-> *db backups (mongorestore / mongodump)*  
 -- **node_modules** 	-> *node dependencies*  
@@ -14,9 +15,9 @@ Structure
 ------ index.html 		-> *main view*  
 ------ views			-> *page views*  
 ------ css 				-> *stylesheets*  
------- img 				-> *images*  
+------ img 				-> *client-side image store*  
 ------ js 				-> *client-side javascripts*  
---------- app 			-> *angular frontend / app route handling*  
+--------- app 			-> *angular frontend / site route handling*  
 --------- controllers 	-> *angular controllers*   
 --------- grayscale  	-> *bootstrap visual template*  
 -- **package.json**		-> *npm configuration for dependencies*  
@@ -24,12 +25,9 @@ Structure
 
 Todo
 -----
-* Feedback - need to connect REST API to form UI
 * Eboard
 * Gallery
-* About (umbrella groups)
 * Events
-* Reroutes / error handling
 
 * Photo gallery / display APIs
   - http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/demo/basic.htm

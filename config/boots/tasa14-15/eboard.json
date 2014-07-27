@@ -1,123 +1,100 @@
 {
-	"firstname" : "Ravi",
-	"lastname" : "Popat",
-	"position" : "President",
-	"major" : "Anthropology & Spanish",
-	"hometown" : "Milton Keynes, UK",
-	"desc" : "During my time at Tufts, TASA has played an important role in my development at college. My culture has become an integral part of my college identity, and I'm grateful to TASA for giving me the opportunity to explore my own culture. With that in mind, I hope to take TASA to new and unprecedented heights this year",
-	"email" : "ravi.popat@tufts.edu",
-	"year" : 3,
-	"photos" : []
+    "firstname": "Ravi",
+    "lastname": "Popat",
+    "position": "President",
+    "major": "Anthropology & Spanish",
+    "hometown": "Milton Keynes, UK",
+    "desc": "During my time at Tufts, TASA has played an important role in my development at college. My culture has become an integral part of my college identity, and I'm grateful to TASA for giving me the opportunity to explore my own culture. With that in mind, I hope to take TASA to new and unprecedented heights this year",
+    "email": "ravi.popat@tufts.edu",
+    "year": 3
+}{
+    "firstname": "Sharan",
+    "lastname": "Motiani",
+    "position": "President",
+    "major": "Economics",
+    "hometown": "Mumbai",
+    "desc": "",
+    "email": "sharan.motiani@tufts.edu",
+    "year": 3
+}{
+    "firstname": "Rohan",
+    "lastname": "Rao",
+    "position": "Treasurer",
+    "major": "Biopsychology",
+    "hometown": "East Brunswick, New Joyzi",
+    "desc": "rohan.rao@tufts.edu",
+    "email": "My name is Rohan, I am a senior studying biopsychology and pre-med from NJ. I am captain of the Tufts Bhangra team, I enjoy long walks on the beach and lazy Sundays.",
+    "year": 4
+}{
+    "firstname": "Anoushka",
+    "lastname": "Shahane",
+    "position": "Art Director",
+    "major": "Biopsychology & Cognitive and Brain Sciences",
+    "hometown": "Sharon, MA",
+    "desc": "I love getting a chance to meet new people who share an interest in South Asian culture and having a background in South Asian dance and music, I love having this community as an outlet for it!",
+    "email": "anoushka.shahane@tufts.edu",
+    "year": 4
+}{
+    "firstname": "Atreyo",
+    "lastname": "Sinha",
+    "position": "Head of Public Relations",
+    "major": "International Relations",
+    "hometown": "Mumbai",
+    "desc": "I was born in Kolkata, and raised in Delhi and Mumbai. My pan-Indian upbringing left me a lethal overdose of desi-ness that continues to shadow me to this day. I came to Tufts, 8000 miles from home, and I needed a little piece of that desi-ness here as well. And I thought, TASA.",
+    "email": "atreyo.sinha@tufts.edu",
+    "year": 2
+}{
+    "firstname": "Tanay",
+    "lastname": "Modi",
+    "position": "Treasurer in Training",
+    "major": "Economics",
+    "hometown": "New Delhi",
+    "desc": "",
+    "email": "tanay.modi@tufts.edu",
+    "year": 2
+}{
+    "firstname": "Soubhik",
+    "lastname": "Barari",
+    "position": "Web Developer",
+    "major": "Computer Science",
+    "hometown": "Boxborough, MA",
+    "desc": "I first came to know of TASA through Tufts Bhangra and now they keep me around as their web monkey! I've made great friends in the TASA community and with my interest in the arts, I'm excited to be a part of Tufts South Asian culture.",
+    "email": "soubhik.barari@tufts.edu",
+    "year": 3
+}{
+    "firstname": "Derek",
+    "lastname": "Kallarackal",
+    "position": "Intercollegiate and Graduate Liaison",
+    "major": "Biomedical Engineering",
+    "hometown": "Lincoln-Sudbury, MA",
+    "desc": "I joined TASA because it was a great way for me to meet new people and as a result I've been able to form many bonds during my time in TASA.",
+    "email": "derek.kallarackal@tufts.edu",
+    "year": 4
+}{
+    "firstname": "Nivedhitha",
+    "lastname": "Ramesh",
+    "position": "Intercollegiate and Graduate Liaison",
+    "major": "Biopsychology",
+    "hometown": "Northborough, MA",
+    "desc": "",
+    "email": "nivedhitha.ramesh@tufts.edu",
+    "year": 3
+}{
+    "firstname": "Annirudh",
+    "lastname": "Balachandran",
+    "position": "Events Planner",
+    "major": "Biopsychology / Pre-med",
+    "hometown": "Houston, TX",
+    "desc": "I joined TASA because it provided me with a way to have a ton of fun connecting with people from different backgrounds who shared the same interest in South Asian culture. It provided me with a support structure of friends and advisors who I could always turn to for help.",
+    "email": "annirudh.balachandran@tufts.edu",
+    "year": 4
+}{
+    "firstname": "Shriya",
+    "lastname": "Nevatia",
+    "position": "Secretary",
+    "major": "Computer Science & Mathematics",
+    "hometown": "Queensbury, NY",
+    "desc": "I've performed Bollywood dance since I was 3 and have been obsessed with paneer for longer. My favorite weekend at Tufts every year is TASA culture show, pumped to be involved for another awesome year!",
+    "email": "shriya.nevatia@tufts.edu",
+    "year": 5
 }
-{
-	"firstname" : "Sharan",
-	"lastname" : "Motiani",
-	"position" : "President",
-	"major" : "Economics",
-	"hometown" : "Mumbai",
-	"desc" : "",
-	"email" : "sharan.motiani@tufts.edu",
-	"year" : 3,
-	"photos" : []
-}
-{
-	"firstname" : "Rohan",
-	"lastname" : "Rao",
-	"position" : "Treasurer",
-	"major" : "Biopsychology",
-	"hometown" : "East Brunswick, New Joyzi",
-	"desc" : "rohan.rao@tufts.edu",
-	"email" : "My name is Rohan, I am a senior studying biopsychology and pre-med from NJ. I am captain of the Tufts Bhangra team, I enjoy long walks on the beach and lazy Sundays.",
-	"year" : 4,
-	"photos" : []
-}
-{
-	"firstname" : "Anoushka",
-	"lastname" : "Shahane",
-	"position" : "Art Director",
-	"major" : "Biopsychology & Cognitive and Brain Sciences",
-	"hometown" : "Sharon, MA",
-	"desc" : "I love getting a chance to meet new people who share an interest in South Asian culture and having a background in South Asian dance and music, I love having this community as an outlet for it!",
-	"email" : "anoushka.shahane@tufts.edu",
-	"year" : 4,
-	"photos" : []
-}
-{
-	"firstname" : "Atreyo",
-	"lastname" : "Sinha",
-	"position" : "Head of Public Relations",
-	"major" : "International Relations",
-	"hometown" : "Mumbai",
-	"desc" : "I was born in Kolkata, and raised in Delhi and Mumbai. My pan-Indian upbringing left me a lethal overdose of desi-ness that continues to shadow me to this day. I came to Tufts, 8000 miles from home, and I needed a little piece of that desi-ness here as well. And I thought, TASA.",
-	"email" : "atreyo.sinha@tufts.edu",
-	"year" : 2,
-	"photos" : []
-}
-{
-	"firstname" : "Tanay",
-	"lastname" : "Modi",
-	"position" : "Treasurer in Training",
-	"major" : "Economics",
-	"hometown" : "New Delhi",
-	"desc" : "",
-	"email" : "tanay.modi@tufts.edu",
-	"year" : 2,
-	"photos" : []
-}
-{
-	"firstname" : "Soubhik",
-	"lastname" : "Barari",
-	"position" : "Web Developer",
-	"major" : "Computer Science",
-	"hometown" : "Boxborough, MA",
-	"desc" : "I first came to know of TASA through Tufts Bhangra and now they keep me around as their web monkey! I've made great friends in the TASA community and with my interest in the arts, I'm excited to be a part of Tufts South Asian culture.",
-	"email" : "soubhik.barari@tufts.edu",
-	"year" : 3,
-	"photos" : []
-}
-{
-	"firstname" : "Derek",
-	"lastname" : "Kallarackal",
-	"position" : "Intercollegiate and Graduate Liaison",
-	"major" : "Biomedical Engineering",
-	"hometown" : "Lincoln-Sudbury, MA",
-	"desc" : "I joined TASA because it was a great way for me to meet new people and as a result I've been able to form many bonds during my time in TASA.",
-	"email" : "derek.kallarackal@tufts.edu",
-	"year" : 4,
-	"photos" : []
-}
-{
-	"firstname" : "Nivedhitha",
-	"lastname" : "Ramesh",
-	"position" : "Intercollegiate and Graduate Liaison",
-	"major" : "Biopsychology",
-	"hometown" : "Northborough, MA",
-	"desc" : "",
-	"email" : "nivedhitha.ramesh@tufts.edu",
-	"year" : 3,
-	"photos" : []
-}
-{
-	"firstname" : "Annirudh",
-	"lastname" : "Balachandran",
-	"position" : "Events Planner",
-	"major" : "Biopsychology / Pre-med",
-	"hometown" : "Houston, TX",
-	"desc" : "I joined TASA because it provided me with a way to have a ton of fun connecting with people from different backgrounds who shared the same interest in South Asian culture. It provided me with a support structure of friends and advisors who I could always turn to for help.",
-	"email" : "annirudh.balachandran@tufts.edu",
-	"year" : 4,
-	"photos" : []
-}
-{
-	"firstname" : "Shriya",
-	"lastname" : "Nevatia",
-	"position" : "Secretary",
-	"major" : "Computer Science & Mathematics",
-	"hometown" : "Queensbury, NY",
-	"desc" : "I've performed Bollywood dance since I was 3 and have been obsessed with paneer for longer. My favorite weekend at Tufts every year is TASA culture show, pumped to be involved for another awesome year!",
-	"email" : "shriya.nevatia@tufts.edu",
-	"year" : 5,
-	"photos" : []
-}
-
-

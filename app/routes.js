@@ -1,7 +1,9 @@
 var eboard = require('./models/eboard');
 var groups = require('./models/groups');
 var tasa = require('../config/tasa');
+var express = require('express');
 var mailer = require('nodemailer');
+var fs = require('fs');
 
 
 function feedbackHtmlMailBody(feedback, name, prompt) {
@@ -14,21 +16,21 @@ module.exports = function(app) {
   // eboard
   app.get('/api/eboard', function(req, res) {
     eboard.getByQuery(req.query, function(err, members) {
-      if (err) throw err;
+      if (err) res.json(err, 400);
       else res.json(members);
     });
   })
 
   app.get('/api/eboard/lastname/:id', function(req, res) {
     eboard.getByLastName(req.params.id, function(err, member) {
-      if (err) throw err;
+      if (err) res.json(err, 400);
       else res.json(member);
     });
   })
 
   app.get('/api/eboard/position/:id', function(req, res) {
     eboard.getByPosition(req.params.id, function(err, member) {
-      if (err) throw err;
+      if (err) res.json(err, 400);
       else res.json(member);
     });
   })
@@ -36,13 +38,21 @@ module.exports = function(app) {
   //groups
   app.get('/api/groups', function(req, res) {
     groups.getByQuery(req.query, function(err, groups) {
-      if (err) throw err;
+      if (err) res.json(err, 400);
+      else res.json(groups);
+    });
+  })
+
+  app.get('/api/groups/:id', function(req, res) {
+    groups.getByName(req.params.id, function(err, groups) {
+      if (err) res.json(err, 400);
       else res.json(groups);
     });
   })
 
   //feedback
   app.post('/api/feedback', function(req, res) {
+    /* forward feedback as TASA e-mail */
     console.log('* Recieved feedback post request : ', req.body, '*');
     var name = req.body.name;
     var sentEmail = req.body.email;
@@ -53,10 +63,9 @@ module.exports = function(app) {
       service: 'Gmail',
       auth: {
         user: tasa.email,
-        pass: tasa.pass /* need to make this secure! */
+        pass: tasa.pass
       }
     });
-    /* need to format this email package */
     fdbkCarrier.sendMail({
         from: tasa.email,
         to: tasa.email,
@@ -75,7 +84,7 @@ module.exports = function(app) {
 
 
   /* ====site/frontend==== */
-  app.get('/', function(req, res) {
+  app.get('*', function(req, res) {
     res.sendfile('./public/index.html');
   });
 

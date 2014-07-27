@@ -1,38 +1,26 @@
 {
-  "name": "South Asian Political Action Committee",
-  "desc": "SAPAC, the South Asian Political Action Committee, is a student led group at Tufts University, which aims to engage in conversation, raise awareness and spark debate on-campus about social, political and economic issues relevant to the South Asian sub-continent.",
-  "email": "sapac.tufts@gmail.com",
-  "page": "http://sites.tufts.edu/sapac/",
-  "photos": []
-}
-{
-  "name": "Tufts Bhangra",
-  "desc": "The Tufts University Bhangra Team, founded in 2001, is comprised of an energetic and talented group of dancers dedicated to bringing the best of bhangra to audiences at Tufts and elsewhere. TUBT has competed and placed across the country, in competitions such as Boston Bhangra, Bhangra Fusion, Bhangra Blowout, and My Life Is Bhangra. They bring the spirit of Punjab to campus with regular Tufts performances, and invite everyone to join in the festive spirit of bhangra! Brrruuuuuahhhh! ",
-  "email": "tuftsbhangra@gmail.com",
-  "page": "https://www.facebook.com/TuftsBhangra",
- "photos": []
-
-}
-{
-  "name": "Tufts Garba",
- "photos": "Garba/Raas is a folk dance form from the Gujarat region of India. Dancers of all experience levels are welcome. Even if you've never danced before, we're ready to teach and have a great time! Garba is an energetic, fast paced dance that puts a contemporary spin on traditional gujarati dance moves. Competing on a national level, the team travels across the country to various competitions. Garba is a great place to make new friends, learn something new, and most importantly...Dance! ",
- "email": "tuftsgarbateam@gmail.com",
-  "page": "https://www.facebook.com//Tufts-Garba-Team/255653030354",
- "photos": []
-
-}
-{
-  "name": "Tamasha",
- "photos": "Tufts Tamasha is Tufts' all-girls Bollywood/South Asian Fusion dance team, founded in 2008. We blend the vibrant elements of Western and Eastern dance, from bollywood and hip hop to classical and lyrical. ",
- "email": "tuftstamasha@gmail.com",
-  "page": "https://www.facebook.com/tuftstamasha",
- "photos": []
-
-}
-{
-  "name": "Pulse",
- "photos": "Lots of people go through years of classical dance training at home, but either lose touch with it at college or get swept up in another team, never returning to their original dance form. This is why we created pulse. - to keep our classical roots while continuing to explore other types of dance. ",
- "email": "pulse.tufts@gmail.com",
-  "page": "http://tuftspulse.moonfruit.com/#/team/4562332207",
- "photos": []
+    "name": "SAPAC",
+    "desc": "SAPAC, the South Asian Political Action Committee, is a student led group at Tufts University, which aims to engage in conversation, raise awareness and spark debate on-campus about social, political and economic issues relevant to the South Asian sub-continent.",
+    "email": "sapac.tufts@gmail.com",
+    "page": "http://sites.tufts.edu/sapac/"
+}{
+    "name": "Tufts Bhangra",
+    "desc": "The Tufts University Bhangra Team, founded in 2001, is comprised of an energetic and talented group of dancers dedicated to bringing the best of bhangra and the spirit of Punjab to audiences at Tufts and elsewhere. They invite everyone to join in the festive spirit of bhangra! Brrruuuuuahhhh! ",
+    "email": "tuftsbhangra@gmail.com",
+    "page": "https://www.facebook.com/TuftsBhangra"
+}{
+    "name": "Tufts Garba",
+    "desc": "Garba/Raas is a folk dance form from the Gujarat region of India. We are an energetic, fast paced dance group that puts a contemporary spin on traditional gujarati dance moves. Garba is a great place to make new friends, learn something new, and most importantly...Dance! ",
+    "email": "tuftsgarbateam@gmail.com",
+    "page": "https://www.facebook.com//Tufts-Garba-Team/255653030354"
+}{
+    "name": "Tamasha",
+    "desc": "Tufts Tamasha is Tufts' all-girls Bollywood/South Asian Fusion dance team, founded in 2008. We blend the vibrant elements of Western and Eastern dance, from bollywood and hip hop to classical and lyrical. ",
+    "email": "tuftstamasha@gmail.com",
+    "page": "https://www.facebook.com/tuftstamasha"
+}{
+    "name": "Pulse",
+    "desc": "Lots of people go through years of classical dance training at home, but either lose touch with it at college or get swept up in another team, never returning to their original dance form. This is why we created pulse. - to keep our classical roots while continuing to explore other types of dance. ",
+    "email": "pulse.tufts@gmail.com",
+    "page": "http://tuftspulse.moonfruit.com/#/team/4562332207"
 }
