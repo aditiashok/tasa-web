@@ -1,12 +1,12 @@
-var eboard = require('./models/eboard');
-var groups = require('./models/groups');
-var tasa = require('../config/tasa');
-var express = require('express');
-var mailer = require('nodemailer');
-var fs = require('fs');
+var eboard    = require('./models/eboard');
+var groups    = require('./models/groups');
+var tasa      = require('../config/tasa');
+var facebook  = require('../config/facebook');
+var express   = require('express');
+var mailer    = require('nodemailer');
+var fs        = require('fs');
 
 
-var facebook = require('../config/facebook');
 
 function feedbackHtmlMailBody(feedback, name, prompt) {
   return "<h1>" + prompt + "</h1><br>" + feedback + "<br>" + "<h2> -" + name + "</h2>";
@@ -15,52 +15,71 @@ function feedbackHtmlMailBody(feedback, name, prompt) {
 module.exports = function(app) {
 
   /* ====api/backend==== */
-  // facebook
+  
+  // facebook //
   app.get('/api/fb/token', function(req, res) {
-    facebook.authorize();
-    res.json("fb token created");
+    /* debugging only */
+    facebook.refreshToken();
+    res.send(200, { status : "token refreshed." });
+  });
+
+  app.get('/api/fb/events', function(req, res) {
+    facebook.getEvents(res);
   })
 
-  // eboard
+  app.get('/api/fb/albums', function(req, res) {
+    facebook.getAlbums(res);
+  })
+
+  app.get('/api/fb/album/id/:id', function(req, res) {
+    facebook.getAlbumById(req.params.id, res);
+  })
+
+  app.get('/api/fb/album/photos/:id', function(req, res) {
+    facebook.getAlbumPhotos(req.params.id, res);
+  })
+
+
+  // eboard //
   app.get('/api/eboard', function(req, res) {
     eboard.getByQuery(req.query, function(err, members) {
       if (err) res.json(err, 400);
       else res.json(members);
     });
-  })
+  });
 
   app.get('/api/eboard/lastname/:id', function(req, res) {
     eboard.getByLastName(req.params.id, function(err, member) {
       if (err) res.json(err, 400);
       else res.json(member);
     });
-  })
+  });
 
   app.get('/api/eboard/position/:id', function(req, res) {
     eboard.getByPosition(req.params.id, function(err, member) {
       if (err) res.json(err, 400);
       else res.json(member);
     });
-  })
+  });
 
-  //groups
+  // groups //
   app.get('/api/groups', function(req, res) {
     groups.getByQuery(req.query, function(err, groups) {
       if (err) res.json(err, 400);
       else res.json(groups);
     });
-  })
+  });
 
   app.get('/api/groups/:id', function(req, res) {
     groups.getByName(req.params.id, function(err, groups) {
       if (err) res.json(err, 400);
       else res.json(groups);
     });
-  })
+  });
 
-  //feedback
+  // feedback //
   app.post('/api/feedback', function(req, res) {
-    /* forward feedback as TASA e-mail */
+    /* forward feedback as TASA self-generated e-mail */
     console.log('* Recieved feedback post request : ', req.body, '*');
     var name = req.body.name;
     var sentEmail = req.body.email;
@@ -87,8 +106,7 @@ module.exports = function(app) {
         res.json("Message sent to: " + tasa.email);
       }
     });
-  })
-
+  });
 
   /* ====site/frontend==== */
   app.get('*', function(req, res) {

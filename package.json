@@ -6,14 +6,15 @@
 	"dependencies" : {
 		"angular" : "latest",
 		"angular-route" : "latest",
-		"express" : "latest",
 		"body-parser" : "*",
-		"nodemailer" : "0.7",
-		"mongodb": "latest",
-		"mongoose" : "latest",
+		"express" : "latest",
 		"grunt": "~0.4.5",
 		"grunt-contrib-jshint": "~0.10.0",
 		"grunt-contrib-nodeunit": "~0.3.3",
-		"grunt-contrib-uglify": "~0.4.0"
+		"grunt-contrib-uglify": "~0.4.0",
+		"nodemailer" : "0.7",
+		"mongodb": "latest",
+		"mongoose" : "latest",
+		"request" : "latest"
 	}
 }
