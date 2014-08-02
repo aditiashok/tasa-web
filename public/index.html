@@ -26,6 +26,25 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
+    <!-- FACEBOOK -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '705203702862711',
+          xfbml      : true,
+          version    : 'v2.0'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">

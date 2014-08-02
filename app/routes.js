@@ -6,6 +6,8 @@ var mailer = require('nodemailer');
 var fs = require('fs');
 
 
+var facebook = require('../config/facebook');
+
 function feedbackHtmlMailBody(feedback, name, prompt) {
   return "<h1>" + prompt + "</h1><br>" + feedback + "<br>" + "<h2> -" + name + "</h2>";
 }
@@ -13,6 +15,12 @@ function feedbackHtmlMailBody(feedback, name, prompt) {
 module.exports = function(app) {
 
   /* ====api/backend==== */
+  // facebook
+  app.get('/api/fb/token', function(req, res) {
+    facebook.authorize();
+    res.json("fb token created");
+  })
+
   // eboard
   app.get('/api/eboard', function(req, res) {
     eboard.getByQuery(req.query, function(err, members) {
@@ -58,7 +66,6 @@ module.exports = function(app) {
     var sentEmail = req.body.email;
     var prompt = req.body.prompt;
     var fdbk = req.body.fdbk;
-    console.log(req.body.fdbk);
     var fdbkCarrier = mailer.createTransport("SMTP", {
       service: 'Gmail',
       auth: {
