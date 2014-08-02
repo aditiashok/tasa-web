@@ -1,7 +1,61 @@
-<div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-        <h2>{{ title }}</h2>
-        <p>{{ subtitle }}</p>
+<style>
+
+	.gallery {
+	    width: 100%;
+	    padding:50px;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    background-size: cover;
+	    -o-background-size: cover;
+	}
+
+    html,body{background:#222;margin:0;}
+    body{border-top:4px solid #000;}
+    .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:620px;margin:20px auto;}
+    h1{font-size:12px;font-weight:normal;color:#ddd;margin:0;}
+    p{margin:0 0 20px}
+    a {color:#22BCB9;text-decoration:none;}
+    .cred{margin-top:20px;font-size:11px;}
+
+
+    #galleria{height:320px}
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="../css/galleria.classic.css" />
+
+
+<div class="gallery">
+	<div class="content">
+        <h1>{{ title }}</h1>
+
+        <div id="galleria">
+            <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Biandintz_eta_zaldiak_-_modified2.jpg/800px-Biandintz_eta_zaldiak_-_modified2.jpg">
+                <img 
+                    src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Biandintz_eta_zaldiak_-_modified2.jpg/100px-Biandintz_eta_zaldiak_-_modified2.jpg",
+                    data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Biandintz_eta_zaldiak_-_modified2.jpg/1280px-Biandintz_eta_zaldiak_-_modified2.jpg"
+                    data-title="Biandintz eta zaldiak"
+                    data-description="Horses on Bianditz mountain, in Navarre, Spain."
+                >
+            </a>
+            <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Athabasca_Rail_at_Brule_Lake.jpg/800px-Athabasca_Rail_at_Brule_Lake.jpg">
+                <img 
+                    src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Athabasca_Rail_at_Brule_Lake.jpg/100px-Athabasca_Rail_at_Brule_Lake.jpg",
+                    data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Athabasca_Rail_at_Brule_Lake.jpg/1280px-Athabasca_Rail_at_Brule_Lake.jpg"
+                    data-title="Athabasca Rail"
+                    data-description="The Athabasca River railroad track at the mouth of Brulé Lake in Alberta, Canada."
+                >
+            </a>
+        </div>
     </div>
+    
+    <p class="cred">Made with <a href="http://galleria.aino.se">Galleria</a>.</p>
 </div>
 
+<script>
+    // Load the classic theme
+    Galleria.loadTheme('../js/galleria.classic.min.js');
+
+    // Initialize Galleria
+    Galleria.run('#galleria');
+</script>
