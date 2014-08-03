@@ -9,43 +9,59 @@
 	    -o-background-size: cover;
 	}
 
-    html,body{background:#222;margin:0;}
-    body{border-top:4px solid #000;}
-    .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:620px;margin:20px auto;}
-    h1{font-size:12px;font-weight:normal;color:#ddd;margin:0;}
-    p{margin:0 0 20px}
-    a {color:#22BCB9;text-decoration:none;}
-    .cred{margin-top:20px;font-size:11px;}
+    h1, h2, h3, h4 {
+        color: #333;
+    }
 
+    #container {
+        padding: 20px;
+        margin: 0 auto;
+        width: 80%;
+        max-width: 600px;
+    }
 
-    #galleria{height:320px}
+    .caption {
+        font-family: Arial;
+        font-size: 11px;
+    }
+
+    .image-list {
+        padding: 0 0 12px;
+        list-style: none;
+        overflow: hidden;
+        zoom: 1;
+    }
+
+    .image-list li {
+        float: left;
+        margin: 0 1px 0 0;
+    }
+
+        .image-list a,
+        .image-list img {
+            display: block;
+            width: 100px;
+        }
 
 </style>
 
 
 
-<link rel="stylesheet" type="text/css" href="../css/galleria.classic.css" />
+<link rel="stylesheet" type="text/css" href="../css/jquery.simple.lightbox.css" />
+
+<script src="../js/bootstrap-transition.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/bootstrap-modal.js" type="text/javascript" charset="utf-8"></script>
 
 
-<div class="gallery">
-	<div class="content">
-        <h1>{{ title }}</h1>
-        <div id="galleria">
-    	    <a ng-repeat="photo in photos" href="{{ photo.src }}">
-    	    	<img ng-src="{{ photo.picture }}", data-big="{{ photo.src }}", data-title="{{ photo.album }}", data-description="">
-    	    </a>
-        </div>
-    </div>
-    
-    <p class="cred">
-        Made with <a href="http://galleria.aino.se">Galleria</a>.
-    </p>
+<div id="container">
+
+    <ul class="image-list unstyled">
+        <li ng-repeat="photo in photos"><a href="{{ photo.src }}" data-lightbox><img ng-src="{{ photo.src }}" alt="{{ photo.small }}" /></a></li>
+    </ul>
 </div>
 
-<script>
-    // Load classic theme
-    Galleria.loadTheme('../js/galleria.classic.min.js');
+<script type="text/javascript" src="../js/jquery.simple.lightbox.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
 
-    // Initialize Galleria
-    Galleria.run('#galleria');
-</script>
+
+

@@ -42,5 +42,6 @@ angular.module('galleryCtrl', [])
 						console.log("Error in retrieving photos : ", res);
 					});
 			}
+			
 
 }]);
