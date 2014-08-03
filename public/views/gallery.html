@@ -22,25 +22,24 @@
 
 </style>
 
+
+
 <link rel="stylesheet" type="text/css" href="../css/galleria.classic.css" />
 
 
 <div class="gallery">
 	<div class="content">
         <h1>{{ title }}</h1>
-
         <div id="galleria">
-
-                <div ng-repeat="photo in photos">
-            	    <a href="{{ photo.src }}">
-            	    	<img src="{{ photo.small }}", data-big="{{ photo.src }}", data-title="{{ photo.album }}", data-description="">
-            	    </a>
-                </div>
-
+    	    <a ng-repeat="photo in photos" href="{{ photo.src }}">
+    	    	<img ng-src="{{ photo.picture }}", data-big="{{ photo.src }}", data-title="{{ photo.album }}", data-description="">
+    	    </a>
         </div>
     </div>
     
-    <p class="cred">Made with <a href="http://galleria.aino.se">Galleria</a>.</p>
+    <p class="cred">
+        Made with <a href="http://galleria.aino.se">Galleria</a>.
+    </p>
 </div>
 
 <script>
