@@ -30,22 +30,13 @@
         <h1>{{ title }}</h1>
 
         <div id="galleria">
-            <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Biandintz_eta_zaldiak_-_modified2.jpg/800px-Biandintz_eta_zaldiak_-_modified2.jpg">
-                <img 
-                    src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Biandintz_eta_zaldiak_-_modified2.jpg/100px-Biandintz_eta_zaldiak_-_modified2.jpg",
-                    data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Biandintz_eta_zaldiak_-_modified2.jpg/1280px-Biandintz_eta_zaldiak_-_modified2.jpg"
-                    data-title="Biandintz eta zaldiak"
-                    data-description="Horses on Bianditz mountain, in Navarre, Spain."
-                >
-            </a>
-            <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Athabasca_Rail_at_Brule_Lake.jpg/800px-Athabasca_Rail_at_Brule_Lake.jpg">
-                <img 
-                    src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Athabasca_Rail_at_Brule_Lake.jpg/100px-Athabasca_Rail_at_Brule_Lake.jpg",
-                    data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Athabasca_Rail_at_Brule_Lake.jpg/1280px-Athabasca_Rail_at_Brule_Lake.jpg"
-                    data-title="Athabasca Rail"
-                    data-description="The Athabasca River railroad track at the mouth of Brulé Lake in Alberta, Canada."
-                >
-            </a>
+
+                <div ng-repeat="photo in photos">
+            	    <a href="{{ photo.src }}">
+            	    	<img src="{{ photo.small }}", data-big="{{ photo.src }}", data-title="{{ photo.album }}", data-description="">
+            	    </a>
+                </div>
+
         </div>
     </div>
     
@@ -53,7 +44,7 @@
 </div>
 
 <script>
-    // Load the classic theme
+    // Load classic theme
     Galleria.loadTheme('../js/galleria.classic.min.js');
 
     // Initialize Galleria
