@@ -53,12 +53,22 @@
 <script src="../js/bootstrap-modal.js" type="text/javascript" charset="utf-8"></script>
 
 
-<div id="container">
 
-    <ul class="image-list unstyled">
-        <li ng-repeat="photo in photos"><a href="{{ photo.src }}" data-lightbox><img ng-src="{{ photo.src }}" alt="{{ photo.small }}" /></a></li>
-    </ul>
+<div class="container">
+    <div class="row">
+        <div class="text-center">
+            <h1>Sample Image Gallery</h1>
+        </div>
+        <div class="container">
+            <div ng-repeat="photo in photos" class="col-md-3">
+                    <img class="thumbnail img-responsive" alt="{{ photo.album }}" 
+                        src="{{ photo.src }}" />
+            </div>
+        </div>
+    </div>
 </div>
+
+
 
 <script type="text/javascript" src="../js/jquery.simple.lightbox.js"></script>
 <script type="text/javascript" src="../js/lightbox.js"></script>
