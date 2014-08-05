@@ -26,7 +26,6 @@ Structure
 Todo
 -----
 * Eboard
-* Gallery
 * Events
 
 * Photo gallery / display APIs

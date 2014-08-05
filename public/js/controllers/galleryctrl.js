@@ -30,11 +30,11 @@ angular.module('galleryCtrl', [])
 				$http.get('/api/fb/album/photos/' + galleryInfo.album_ids[i])
 					.success(function(res) {
 						for (img in res.data) {
-							$scope.photos[img] = {
+							$scope.photos.push({
 								src		: res.data[img].source,
 								small 	: res.data[img].picture, 
 								album 	: $scope.albums[galleryInfo.album_ids[i]]
-							};
+							});
 						};
 						// $scope.photos = res.data;
 					})
