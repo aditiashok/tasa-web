@@ -1,6 +1,62 @@
+<style>
+
+	.eboard {
+	    width: 100%;
+	    padding:200px;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    background-size: cover;
+	    -o-background-size: cover;
+	}
+
+	.label {
+		font-size: 18pt;
+		font-family: Garamond;
+	}
+
+	body {
+		font-size: 12pt;
+	}
+
+	h1 {
+		padding-bottom: 0px;
+		line-height: 0px;
+	}
+
+    h2 {
+        color: #A9A9A9;
+        font-size: 15pt;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 0px;
+    }
+
+</style>
+
+
 <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-        <h2>{{ title }}</h2>
-        <p>{{ subtitle }}</p>
-    </div>
+
+    <div class="container eboard">
+	    <div class="col-lg-8 col-lg-offset-2">
+	        <p>{{ subtitle }}</p>
+	    </div>
+
+	    <div ng-repeat="member in eboard">
+	    	<h1>{{ member.firstname }} {{ member.lastname }}</h1>
+	    	<h2><i> {{ member.position }} </i></h2>
+	    	<!-- 	    	<a href="mailto:{{ member.email }}">{{ member.email }}</a><br>
+ -->	    	<div class="label">hometown :</div> {{ member.hometown }}<br>
+	    	<div class="label">major :</div> {{ member.major }}<br>
+
+
+
+	      <img ng-src="../img/eboard/{{ member.lastname }}.jpg" class="img-circle" alt="{{ }}" width="200" height="200">
+<br>
+
+	    	<p>"{{ member.desc }}"</p><br>
+
+
+	    	<br><br>
+	    </div>
+
+	</div>
 </div>
