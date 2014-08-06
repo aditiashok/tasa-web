@@ -25,6 +25,7 @@ Structure
 
 Todo
 -----
+* Gallery - eventually animate + label albums
 * Eboard
 * Events
 
