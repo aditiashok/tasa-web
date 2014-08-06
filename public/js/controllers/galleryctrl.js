@@ -9,8 +9,11 @@ angular.module('galleryCtrl', [])
 			] 
 		};
 	})
-	.controller('galleryController', ['$scope', '$http', 'galleryInfo', 
-		function($scope, $http, galleryInfo) {
+	.factory('galleryCache', function($cacheFactory) {
+		return $cacheFactory('galleryData');
+	})
+	.controller('galleryController', ['$scope', '$http', 'galleryInfo', 'galleryCache', 
+		function($scope, $http, galleryInfo, galleryCache) {
 			$scope.title	= "Gallery";
 			$scope.subtitle = "";
 			$scope.albums = {};
@@ -18,7 +21,7 @@ angular.module('galleryCtrl', [])
 
 			for (i in galleryInfo.album_ids) {
 				// get album names
-				$http.get('/api/fb/album/id/' + galleryInfo.album_ids[i])
+				$http.get('/api/fb/album/id/' + galleryInfo.album_ids[i], { cache: true })
 					.success(function(res) {
 						$scope.albums[galleryInfo.album_ids[i]] = res.name;
 					})
@@ -27,7 +30,7 @@ angular.module('galleryCtrl', [])
 					});
 
 				// get photos from that album
-				$http.get('/api/fb/album/photos/' + galleryInfo.album_ids[i])
+				$http.get('/api/fb/album/photos/' + galleryInfo.album_ids[i], { cache: galleryCache })
 					.success(function(res) {
 						for (img in res.data) {
 							$scope.photos.push({
