@@ -8,6 +8,21 @@
 	    background-size: cover;
 	    -o-background-size: cover;
 	}
+	.banner {
+	    background: url(../img/site/cshow5.jpg) no-repeat center center scroll;
+	    width: 100%;
+	    padding:0px;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    background-size: cover;
+	    -o-background-size: cover;
+	}
+
+	.banner {
+	   background-image: url("/img/site/cshow3.jpg");
+	   height: 295px;
+	   background-size: 100%;
+	}
 	.name {
 		font-size: 24pt;
 		font-family: 'Abril fatface';
@@ -104,7 +119,7 @@
 
 <div class="eboard container-fluid">
 	<div class="col-lg-8 col-lg-offset-2">
-		<h1>Eboard '14-15</h1>
+		<h1>{{ title }} '14-15</h1>
 	</div>
 
     <div ng-repeat="member in eboard" class="row">

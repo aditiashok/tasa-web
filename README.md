@@ -25,14 +25,8 @@ Structure
 
 Todo
 -----
-* Gallery - eventually animate + label albums
-* Eboard
-* Events
-
-* Photo gallery / display APIs
-  - http://www.pixedelic.com/plugins/camera/development/camera_1.0.6/demo/basic.htm
-  - http://galleria.io/
-  - http://tympanus.net/codrops/2012/06/05/fullscreen-slit-slider-with-jquery-and-css3/ --> sexy full screen slideshow
-  - http://unslider.com/ --> easy, small jquery slider
-  - FancyBox
+* Gallery - label albums (organize data structures this way?)
+* Eboard - resize photos to fit evenly + have horizontal navigator at top
+* Deploy!
+* Events - work on during school year.. should be simple
 
