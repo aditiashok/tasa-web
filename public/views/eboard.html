@@ -25,15 +25,14 @@
     h2 {
         color: #A9A9A9;
         font-size: 15pt;
-        font-family: Arial, Helvetica, sans-serif;
     }
 
 </style>
 
 
-<div class="container">
+<!-- 	 <div class="container">
 
-    <div class="eboard">
+	<div class="eboard">
 	    <div class="col-lg-8 col-lg-offset-2">
 	        <p>{{ subtitle }}</p>
 	    </div>
@@ -42,14 +41,14 @@
 	    <div ng-repeat="member in eboard">
 	    	<h1>{{ member.firstname }}  {{ member.lastname }}</h1>
 	    	<h2><i> {{ member.position }} </i></h2>
-	    	<!-- 	    	<a href="mailto:{{ member.email }}">{{ member.email }}</a><br>
- -->	    	<div class="label">hometown :</div> {{ member.hometown }}<br>
+	    		    	<a href="mailto:{{ member.email }}">{{ member.email }}</a><br>
+	    	<div class="label">hometown :</div> {{ member.hometown }}<br>
 	    	<div class="label">major :</div> {{ member.major }}<br>
 
 
 
 	      <img ng-src="../img/eboard/{{ member.lastname }}.jpg" class="img-circle" alt="{{ }}" width="200" height="200">
-<br>
+	<br>
 
 	    	<p>"{{ member.desc }}"</p><br>
 
@@ -57,5 +56,46 @@
 	    	<br><br>
 	    </div>
 
+
+
 	</div>
-</div>
+	</div> -->
+
+
+
+
+
+<!-- 	    <div class="eboard container">
+  	    <div class="col-lg-8 col-lg-offset-2">
+	        <h2>{{ subtitle }}</h2>
+	    </div>
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+          <li ng-repeat="member in eboard" data-target="#carousel-example-generic" data-slide-to="{{ $index }}" ng-class="($first) ? 'active'"></li>
+        </ol>
+
+
+        <div class="carousel-inner">
+          <div ng-repeat="member in eboard" ng-class="($first) ? 'item active' : 'item' ">
+            <img ng-src="../img/eboard/{{ member.lastname }}.jpg" class="img-circle" alt="{{ }}" width="200" height="200" alt="Apple iPhone 5S">
+            <div class="carousel-caption">
+              <h1>{{ member.firstname }} {{ member.lastname }}</h1>
+              <h2><i>{{ member.position }}</i></h2>
+              <p>The iPhone 5s isn't a radical departure from its predecessor in body (unless you count a new gold color), but under the hood are a number of changes that give Apple's newest flagship some real firepower, with the best still yet to come. </p>
+            </div>
+          </div>
+        </div>
+
+
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div> -->
+
+
+

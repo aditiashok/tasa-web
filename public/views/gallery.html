@@ -9,12 +9,21 @@
 	    -o-background-size: cover;
 	}
 
+    .img-responsive:hover {
+        filter: grayscale(80%);
+        -webkit-filter: grayscale(80%);
+        -moz-filter: grayscale(80%);
+        -ms-filter: grayscale(80%);
+        -o-filter: grayscale(80%);
+    }
+
     h1, h2, h3, h4 {
         color: #333;
     }
 
-</style>
 
+
+</style>
 
 
 
@@ -25,8 +34,8 @@
         </div>
         <div class="container">
             <div ng-repeat="photo in photos" class="col-md-3">
-                    <img class="thumbnail img-responsive" alt="{{ photo.album }}" 
-                        src="{{ photo.src }}" />
+                    <a href="{{ photo.src }}" target="_blank"><img class="thumbnail img-responsive" alt="{{ photo.album }}" 
+                        src="{{ photo.src }}" /></a>
             </div>
         </div>
     </div>
