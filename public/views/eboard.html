@@ -8,26 +8,63 @@
 	    background-size: cover;
 	    -o-background-size: cover;
 	}
+	.name {
+		font-size: 24pt;
+		font-family: 'Abril fatface';
+
+	}
 
 	.label {
 		font-size: 18pt;
-		font-family: Garamond;
+		font-family: 'Abril fatface';
+		color: #353538;
 	}
 
-	body {
-		font-size: 12pt;
+	.value {
+		font-size: 16pt;
+		font-family: 'Abril fatface';	
 	}
+
+	.desc {
+		font-size: 16pt;
+		font-family: 'Abril fatface';
+		color: #D6B1BE;
+	}
+
+	.jumbotron {
+		background: #993D5C;
+	}
+
 
 	h1 {
+	    font-size: 24pt;
 		padding-bottom: 0px;
 	}
 
     h2 {
-        color: #A9A9A9;
-        font-size: 15pt;
+        color: #AB969D;
+        font-size: 24pt;
+		font-family: 'Abril fatface';
     }
+	.img-responsive:hover {
+		filter: grayscale(80%);
+		-webkit-filter: grayscale(80%);
+		-moz-filter: grayscale(80%);
+		-ms-filter: grayscale(80%);
+		-o-filter: grayscale(80%);
+	}
+
+	p{
+		font-family: 'Garamond';
+		font-size: 20pt;
+	}
+
 
 </style>
+
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Abril%20Fatface">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
 
 
 <!-- 	 <div class="container">
@@ -65,37 +102,38 @@
 
 
 
-<!-- 	    <div class="eboard container">
-  	    <div class="col-lg-8 col-lg-offset-2">
-	        <h2>{{ subtitle }}</h2>
-	    </div>
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div class="eboard container-fluid">
+	<div class="col-lg-8 col-lg-offset-2">
+		<h1>Eboard '14-15</h1>
+	</div>
 
-        <ol class="carousel-indicators">
-          <li ng-repeat="member in eboard" data-target="#carousel-example-generic" data-slide-to="{{ $index }}" ng-class="($first) ? 'active'"></li>
-        </ol>
+    <div ng-repeat="member in eboard" class="row">
+    		<hr />
+        <div class="col-lg-6 col-md-6 col-sm-1">
+            <a href="mailto:{{ member.email }}">
+                <img class="img-responsive" alt="Bootstrap template" ng-src="../img/eboard/{{ member.lastname }}.jpg" />
+            </a>
+        </div>
+        <div class="container jumbotron col-lg-6 col-md-6">
+            <div class="name">{{ member.firstname }} {{ member.lastname }}</div>
+            <h2><i>{{ member.position }}</i></h2>
 
+			<dl class="dl-horizontal">
+			  <dt class="label">Hometown</dt>
+			  <dd class="value">{{ member.hometown }}</dd>
+			  <dt class="label">Major</dt>
+			  <dd class="value">{{ member.major }}</dd>
+			</dl>
 
-        <div class="carousel-inner">
-          <div ng-repeat="member in eboard" ng-class="($first) ? 'item active' : 'item' ">
-            <img ng-src="../img/eboard/{{ member.lastname }}.jpg" class="img-circle" alt="{{ }}" width="200" height="200" alt="Apple iPhone 5S">
-            <div class="carousel-caption">
-              <h1>{{ member.firstname }} {{ member.lastname }}</h1>
-              <h2><i>{{ member.position }}</i></h2>
-              <p>The iPhone 5s isn't a radical departure from its predecessor in body (unless you count a new gold color), but under the hood are a number of changes that give Apple's newest flagship some real firepower, with the best still yet to come. </p>
-            </div>
-          </div>
+            <blockquote class="blockquote-reverse">
+				<p> "{{ member.desc }}"</p>
+			</blockquote>
+   
         </div>
 
-
-        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
-    </div> -->
+    </div>
 
 
+    </div>
+</div>
 

@@ -1,7 +1,7 @@
 
 angular.module('eboardCtrl', []).controller('eboardController', ['$scope', '$http', function($scope, $http) {
 	$scope.title = "E-board";
-	$scope.subtitle = "Introducing the 2014-15 e-board...";
+	$scope.year = "2014-15";
 	$http.get('/api/eboard', { cache : true })
 		.success(function(data) {
 			$scope.eboard = data;
