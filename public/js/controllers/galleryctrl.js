@@ -1,4 +1,10 @@
 
+/* instead of a photos and albums data structure...
+{
+	"album_name" : [photos]
+	...
+}
+
 
 angular.module('galleryCtrl', [])
 	.factory('galleryInfo', function() {
