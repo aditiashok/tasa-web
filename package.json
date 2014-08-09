@@ -3,6 +3,10 @@
 	"main" : "server.js",
 	"version" : "0.0.1",
 	"author" : "Soubhik Barari <soubhik.barari@tufts.edu>",
+	"repository" : {
+	 	"type": "git", 
+	 	"url": "git://github.com/soubhikbarari/tasa-web"
+	 },
 	"dependencies" : {
 		"angular" : "latest",
 		"angular-route" : "latest",
@@ -15,6 +19,7 @@
 		"nodemailer" : "0.7",
 		"mongodb": "latest",
 		"mongoose" : "latest",
-		"request" : "latest"
+		"request" : "latest",
+		"serve-favicon" : "latest"
 	}
 }

@@ -1,13 +1,17 @@
 // imports
-var mongoose = require('mongoose');
-var Schema   = mongoose.Schema,
-    ObjectId = Schema.ObjectId;
-var HOST = 'localhost',
-    PORT = '27017',
-    NAME = 'tasa14-15',
-    URI = 'mongodb://' + HOST + ':' + PORT + '/' + NAME; 
+var mongoose = require('mongoose'),
+	tasa	 = require('./tasa');
+
+// location
+var AUTH 	 = tasa.db_user + ':' + tasa.db_pass,
+    PORT 	 = '29187',
+    HOST	 = 'ds0' + PORT + '.mongolab.com',
+    NAME 	 = 'tasa-web',
+    URI		 = 'mongodb://' + AUTH + '@' + HOST + ':' + PORT + '/' + NAME; 
 
 // schemas
+var Schema   = mongoose.Schema;
+
 var memberSchema = new Schema({
   firstname: String,
   lastname: String,

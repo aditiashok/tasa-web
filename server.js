@@ -4,9 +4,11 @@ var root = __dirname,
 	mongoose = require('mongoose'),
 	bodyParser = require('body-parser'),
 	path = require('path'),
+	favicon = require('serve-favicon');
 	db = require('./config/db');
 
 var app = express();
+app.use(favicon(__dirname + '/public/img/favicon.ico'));
 app.use("/", express.static(path.join(__dirname, 'public')));
 app.use(bodyParser());
 
