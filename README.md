@@ -7,7 +7,8 @@ Structure
 ------ routes 			-> *express backend / api route handling*  
 -- **config**  
 ------ db 				-> *mongodb configuration*   
------- tasa 			-> *TASA general information*  
+------ facebook			-> *facebook API configuation*    
+------ tasa 			-> *tasa general info*  
 ------ boots 			-> *db writes (mongoimport / mongoexport)*  
 ------ dumps 			-> *db backups (mongorestore / mongodump)*  
 -- **node_modules** 	-> *node dependencies*  
