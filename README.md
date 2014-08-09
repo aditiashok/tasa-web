@@ -25,8 +25,6 @@ Structure
 
 Todo
 -----
-* Gallery - label albums (organize data structures this way?)
-* Eboard - resize photos to fit evenly + have horizontal navigator at top
 * Deploy!
 * Events - work on during school year.. should be simple
 
