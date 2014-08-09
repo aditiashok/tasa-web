@@ -9,6 +9,15 @@
 	    -o-background-size: cover;
 	}
 
+    .banner {
+        background: url(../img/site/cshow10.jpg) no-repeat center center scroll;
+        padding:5px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
     .img-responsive:hover {
         filter: grayscale(80%);
         -webkit-filter: grayscale(80%);
@@ -17,7 +26,7 @@
         -o-filter: grayscale(80%);
     }
 
-    h1, h2, h3, h4 {
+    h2, h3, h4 {
         color: #333;
     }
 
@@ -29,13 +38,16 @@
 
 <div class="gallery container">
     <div class="row">
-        <div class="text-center">
+        <div class="text-center banner">
             <h1>Gallery</h1>
         </div>
         <div class="container">
-            <div ng-repeat="photo in photos" class="col-md-3">
-                    <a href="{{ photo.src }}" target="_blank"><img class="thumbnail img-responsive" alt="{{ photo.album }}" 
+            <div ng-repeat="album in albums">
+                <div class="text-left"><h3><u>{{ album.name }}</u></h3></div>
+                    <div ng-repeat="photo in album.photos" class="col-md-3">
+                    <a href="{{ photo.src }}" target="_blank"><img class="thumbnail img-responsive" alt="{{ album.name }}" 
                         src="{{ photo.src }}" /></a>
+                    </div>
             </div>
         </div>
     </div>
