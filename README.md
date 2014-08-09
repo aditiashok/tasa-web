@@ -26,6 +26,5 @@ Structure
 
 Todo
 -----
-* Deploy!
 * Events - work on during school year.. should be simple
-
+* Work on making faster and prettier during school year!
