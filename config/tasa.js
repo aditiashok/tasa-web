@@ -1,6 +1,6 @@
 module.exports = {
-	email			:	" ",
-	pass			: 	" ",
+	email			:	"",
+	pass			: 	"",
 	fb_access_token	:   "705203702862711|i5NFOCCdVUOURhXX5-cIJ6GOZHg",		/* find at /api/fb/token -- "app access token" which is a safe, low-access key to FB Graph API */
 	appid			: 	705203702862711, 									/* find on TASA fb app dashboard (FB developers) */
 	appsecret		: 	"f923ee308726f9e99a59f73b65c3d283", 				/* find on TASA fb app dashboard (FB developers) */

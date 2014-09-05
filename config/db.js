@@ -16,6 +16,7 @@ var memberSchema = new Schema({
   firstname: String,
   lastname: String,
   position: String,
+  listorder: Number,
   major: String,
   hometown: String,
   desc: String,
